@@ -8,11 +8,11 @@ const ImageUploader = () => {
         <div style={{ maxWidth: '500px', margin: '0 auto' }}>
             <h2>Загрузите изображение</h2>
             <StorageManager
-                acceptedFileTypes={['image/*']} // Только изображения
-                path="" // Папка в S3 (не забудьте настроить права!)
-                maxFileCount={1} // Максимум 5 файлов
-                isResumable // Возобновляемая загрузка
-                provider="AWSS3" // Используем S3
+                acceptedFileTypes={['image/*']}
+                path=""
+                maxFileCount={1}
+                isResumable
+                provider="AWSS3"
             />
         </div>
     );
